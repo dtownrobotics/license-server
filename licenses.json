@@ -1,0 +1,14 @@
+{
+  "licenses": [
+    {
+      "key": "ABCDEF-123456-ONEUSE",
+      "machineId": null,
+      "activatedAt": null
+    },
+    {
+      "key": "GHIJKL-789012-ONEUSE",
+      "machineId": null,
+      "activatedAt": null
+    }
+  ]
+}
