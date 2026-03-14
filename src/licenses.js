@@ -96,9 +96,11 @@ async function activateLicenseMongo(key, machineId) {
 // ---------- Public API (file or Mongo) ----------
 export async function initDb() {
   if (MONGODB_URI) {
+    console.log('license-server: MONGODB_URI detected, using MongoDB backend');
     await initMongo();
     return;
   }
+  console.log('license-server: MONGODB_URI not set, using local JSON file backend');
   ensureDirExists(DATA_DIR);
   if (!fs.existsSync(DATA_FILE)) {
     const initial = {
